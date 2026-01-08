@@ -34,8 +34,8 @@ This study was conducted by [Michael Tchuindjang](https://github.com/Micdejc), [
 
 ## Table of Contents
 
-- [LLM Evaluators](#llmevaluators)
-- [Experimental Results](#experimentalresults)
+- [LLM Evaluators](#llm-evaluators)
+- [Experimental Results](#experimental-results)
 - [Reproducibility](#reproducibility)
 - [Citation](#Citation) 
 - [License](#license)
