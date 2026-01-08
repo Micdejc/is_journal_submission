@@ -33,12 +33,19 @@ This study was conducted by [Michael Tchuindjang](https://github.com/Micdejc), [
 
 
 ## Table of Contents
-
+- [Human Annotation](#human-annotation)
 - [LLM Evaluators](#llm-evaluators)
 - [Experimental Results](#experimental-results)
 - [Reproducibility](#reproducibility)
 - [Citation](#Citation) 
 - [License](#license)
+
+---
+
+## Human Annotation
+The ground truth for our experiments was created by a team of cybersecurity experts. They reviewed and provided judgments on a curated set of experimental conversations to ensure high-quality, reliable labels.  
+
+The shared labeling guidelines and rules followed by the experts can be found [here](https://github.com/Micdejc/jailbreaking_assessment).  
 
 ---
 
@@ -63,7 +70,7 @@ You can use this framework to evaluate and moderate LLM responses for multi-turn
 1. **Automated Moderation with Existing LLM Evaluators**  
    Follow the instructions in [`run_moderator.ipynb`](run_moderator.ipynb) to moderate LLM responses using standard automated methods.
 
-2. **Semantic Similarity-Based Evaluation**  
+2. **Semantic Similarity-Based Evaluation (SIM)**  
    Follow the instructions in [`run_evaluator.ipynb`](run_evaluator.ipynb) to evaluate LLM responses based on semantic similarity, which provides human-aligned scoring.
 
 📂 **Examples:**  
