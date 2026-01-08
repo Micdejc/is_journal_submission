@@ -42,30 +42,9 @@ This study was conducted by [Michael Tchuindjang](https://github.com/Micdejc), [
 
 ---
 
-## 🎯 Motivation
+## LLM Evaluators
+Well-known LLM evaluators for safety evaluation were considered during the experiments, including the open-source [Llama Guard 3](https://huggingface.co/meta-llama/Llama-Guard-3-8B) and the closed-source GPT-4.1.
 
-### Limitations of LLM-as-a-Judge Evaluation
-
-While LLM-based evaluators are scalable, they suffer from critical weaknesses:
-
-- ❌ Poor alignment with human judgment  
-- ❌ Vulnerability to linguistic tricks (e.g., tense shifts, paraphrasing)  
-- ❌ High false-negative rates in safety-critical scenarios  
-- ❌ Reliance on closed-source, non-auditable models  
-
-In cybersecurity, **missing a successful jailbreak is more dangerous than flagging a false positive**. Therefore, evaluation methods must prioritize **recall, robustness, and human alignment**.
-
----
-
-## 🧠 Core Idea
-
-Instead of asking an LLM *“Is this a jailbreak?”*, this framework asks:
-
-> **“How semantically close is the model’s response to a disallowed intent, as judged by humans?”**
-
-We treat **human judgment as the ground truth signal** and design semantic similarity metrics that closely approximate it—across **multiple turns**, **implicit violations**, and **linguistic obfuscation**.
-
----
 
 ---
 
@@ -78,18 +57,8 @@ Evaluations were conducted on **widely used adversarial benchmarks**:
 
 ### Key Findings
 
-- 🚀 Outperforms **closed-source GPT-4.1** as an evaluator
-- 📈 Improves true jailbreak detection by:
-  - **+2.2% on AdvBench**
-  - **+18.6% on HarmBench**
-- 🧠 Best performance on **past-tense linguistic attacks**
-- 🔍 Achieves:
-  - **F1 = 0.67** on HarmBench (vs 0.65 for GPT-4.1)
-  - **Recall = 0.993** on HarmBench (vs 0.935)
-  - **F1 = 0.75** on AdvBench (vs 0.749)
-  - **Recall = 0.992** on AdvBench (vs 0.864)
-- 🛡️ Maintains **FNR ≤ 0.028 across all benchmarks**
-- ⚖️ Significantly better **FNR/FPR trade-off** than GPT-4.1 (FNR up to 0.159)
+- 🚀 Outperforms **open-source Llama-Guard 3** and even **closed-source GPT-4.1** as an evaluator
+- 📉 Maintains **FNR ≤ 0.028 across all benchmarks**
 
 These results demonstrate that **semantic similarity provides a more reliable and human-aligned evaluation signal than LLM judges**.
 
