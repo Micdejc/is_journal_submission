@@ -64,6 +64,7 @@ Evaluations were conducted on **widely used adversarial benchmarks**:
 <p align="center" width="100%">
 <img src="assets/Confusion_matrices_2x2.png" alt="CONFUSION MATRIXES" style="width: 50%; min-width: 300px; display: block; margin: auto;">
 </p>
+
 These results demonstrate that **semantic similarity provides a more reliable and human-aligned evaluation signal than LLM judges**.
 
 ---
