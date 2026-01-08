@@ -35,7 +35,7 @@ This study was conducted by [Michael Tchuindjang](https://github.com/Micdejc), [
 ## Table of Contents
 
 - [LLM Evaluators](#llmevaluators)
-- [Experiments](#experiments)
+- [Experimental Results](#experimentalresults)
 - [Reproducibility](#reproducibility)
 - [Citation](#Citation) 
 - [License](#license)
@@ -67,60 +67,14 @@ We treat **human judgment as the ground truth signal** and design semantic simil
 
 ---
 
-## 🧪 Methodology
-
-### 1. Multi-Turn Semantic Modeling
-
-Each jailbreak attempt is represented as a sequence of turns:
-
-
-Semantic signals are extracted **per assistant turn**, enabling detection of:
-- Gradual safety erosion
-- Partial violations
-- Implicit intent realization
-
 ---
 
-### 2. Reference Harmful Intent Space
-
-A curated semantic intent space is constructed from:
-- Policy-aligned disallowed behaviors
-- Canonical harmful instructions
-- Benchmark ground truth (AdvBench, HarmBench)
-
-These references serve as **semantic anchors reflecting human-recognized harm**.
-
----
-
-### 3. Semantic Similarity Scoring
-
-For each assistant response, semantic similarity is computed against the harmful intent space using embedding-based metrics (e.g., cosine similarity).
-
-This produces:
-- Continuous risk scores (not binary labels)
-- Robustness to paraphrasing and tense manipulation
-- Sensitivity to semantic equivalence
-
----
-
-### 4. Human-Correlated Evaluation
-
-Automated scores are evaluated against **human judgments** using:
-- Precision, recall, and F1 score
-- False Negative Rate (FNR)
-- False Positive Rate (FPR)
-- FNR/FPR trade-off analysis
-
-The objective is **maximal alignment with human evaluation**, not agreement with other LLMs.
-
----
-
-## 📊 Experimental Results
+## Experimental Results
 
 Evaluations were conducted on **widely used adversarial benchmarks**:
 
-- **AdvBench**
-- **HarmBench**
+- **[AdvBench](https://github.com/llm-attacks/llm-attacks)**
+- **[HarmBench](https://github.com/centerforaisafety/HarmBench)**
 
 ### Key Findings
 
@@ -140,36 +94,9 @@ Evaluations were conducted on **widely used adversarial benchmarks**:
 These results demonstrate that **semantic similarity provides a more reliable and human-aligned evaluation signal than LLM judges**.
 
 ---
+## Reproducibility
 
-## ✅ Key Contributions
-
-- Semantic similarity–based evaluation for multi-turn jailbreaking
-- Strong correlation with human judgment
-- State-of-the-art recall and low false-negative rates
-- Robust to linguistic manipulation
-- Fully open-source and auditable
-
----
-
-## 🔬 Use Cases
-
-- Evaluating multi-turn jailbreak datasets
-- Benchmarking LLM safety and alignment
-- Comparing defense mechanisms (e.g., RepE, fine-tuning)
-- Reducing reliance on costly human evaluation
-- Safety assessment in cybersecurity and high-risk domains
-
----
-
-## 🛠️ Planned Extensions
-
-- [ ] Human-in-the-loop calibration
-- [ ] Explainable semantic attribution
-- [ ] Turn-wise intent trajectory visualization
-- [ ] Cross-model generalization analysis
-- [ ] Public human-labeled evaluation subset
-
----
+A note for hardware: all experiments we run use one or multiple NVIDIA GeForce RTX 4090 GPUs, which have 32GiB memory per chip. 
 
 ## Ethical & Security Notice
 
@@ -189,7 +116,7 @@ If you use this framework in your research, please cite:
   year={2026},
   note={AI Safety and Cybersecurity Research}
 }
-
+```
 
 ## License
 Copyright (c) 2025, Michael Tchuindjang 
