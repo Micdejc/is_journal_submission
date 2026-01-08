@@ -56,12 +56,18 @@ Evaluations were conducted on **widely used adversarial benchmarks**:
 - **[AdvBench](https://github.com/llm-attacks/llm-attacks)**
 - **[HarmBench](https://github.com/centerforaisafety/HarmBench)**
 
-### How to Run:
-- To moderate LLM responses for jailbreaking using automated methods, refer to the instructions provided in [`run_moderator.ipynb`](run_moderator.ipynb) file.
+## How to Run
 
-- To moderate LLM responses for jailbreaking using semantic similarities, refer to the instructions provided in [`run_evaluator.ipynb`](run_evaluator.ipynb) file.
-  
-A few examples of our experimental results are included in [`examples`](examples) folder.
+You can use this framework to evaluate and moderate LLM responses for multi-turn jailbreaking in two ways:
+
+1. **Automated Moderation with Existing LLM Evaluators**  
+   Follow the instructions in [`run_moderator.ipynb`](run_moderator.ipynb) to moderate LLM responses using standard automated methods.
+
+2. **Semantic Similarity-Based Evaluation**  
+   Follow the instructions in [`run_evaluator.ipynb`](run_evaluator.ipynb) to evaluate LLM responses based on semantic similarity, which provides human-aligned scoring.
+
+📂 **Examples:**  
+A few sample results from our experiments are available in the [`examples`](examples) folder for reference.
 
 ### Key Findings
 
