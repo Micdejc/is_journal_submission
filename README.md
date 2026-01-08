@@ -1,4 +1,4 @@
-# 🔐 Human-Correlated Semantic Evaluation of Multi-Turn Jailbreaking Attacks
+# A Semantic Similarity-Based Approach for Human-Aligned Multi-Turn Jailbreaking Evaluation in Cybersecurity
 
 ## Overview
 
