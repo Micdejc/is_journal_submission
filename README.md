@@ -126,5 +126,5 @@ If you use this framework in your research, please cite:
 ```
 
 ## License
-Copyright (c) 2025, Michael Tchuindjang 
+Copyright (c) 2026, Michael Tchuindjang 
 All rights reserved.
