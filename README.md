@@ -78,7 +78,7 @@ A few sample results from our experiments are available in the [`examples`](exam
 
 ### Key Findings
 
-- 🚀 Outperforms **open-source Llama-Guard 3** and even **closed-source GPT-4.1** as an evaluator
+- 🚀 Outperforms **open-source Llama-Guard 3** while achieving performance comparable to **closed-source GPT-4.1** as an evaluator
 - 📉 Maintains **FNR ≤ 0.028 across all benchmarks**
 
 <p align="center" width="100%">
