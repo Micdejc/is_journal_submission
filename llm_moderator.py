@@ -75,7 +75,7 @@ class LLMModerator:
     # List of the opensource LLM moderators we consider during our experiments, their names can be retrieved from LM studio when the model is loaded
     # LLM 1: llama-guard-3-8b
     # LLM 2: shieldgemma-9b
-    # LLM 3: Rule-based
+    # LLM 3: Rule-based (GCG)
     OPEN_LLM_VERSIONS = [
     {"MODEL_NAME": "llama-guard-3-8b", "LLM": "Llama", "LLM_VERSION": "3 (8B)"},
     {"MODEL_NAME": "shieldgemma-9b", "LLM": "Gemma", "LLM_VERSION": "(9B)"},
