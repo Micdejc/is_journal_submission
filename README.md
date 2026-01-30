@@ -23,8 +23,6 @@ Instead of asking an LLM *“Is this a jailbreak?”*, this framework asks:
 
 We treat **human judgment as the ground truth signal** and design semantic similarity metrics that closely approximate it—across **multiple turns**, **implicit violations**, and **linguistic obfuscation**.
 
-This study was conducted by [Michael Tchuindjang](https://github.com/Micdejc), [Nathan Duran](https://github.com/NathanDuran), [Phil Legg](https://github.com/pa-legg), and [Faiza Medjek](https://sciprofiles.com/profile/3778378) as part of a PhD research project in Cybersecurity and Artificial Intelligence, supported by a studentship at the University of the West of England (UWE Bristol), UK.
-
 ---
 
 ## Updates
@@ -39,7 +37,6 @@ This study was conducted by [Michael Tchuindjang](https://github.com/Micdejc), [
 - [Embedding models](#embedding-models)
 - [Experimental Results](#experimental-results)
 - [Reproducibility](#reproducibility)
-- [Citation](#Citation) 
 - [License](#license)
 
 ---
@@ -112,19 +109,5 @@ It does **not** provide tools to generate, optimize, or deploy jailbreaking atta
 
 ---
 
-## Citation
-
-If you use this framework in your research, please cite:
-
-```bibtex
-@misc{tchuindjang2026semantic,
-  title={Human-Correlated Semantic Evaluation of Multi-Turn Jailbreaking Attacks},
-  author={Tchuindjang, Michael and Duran, Nathan. and Legg, Phil. and Medjek, Faiza.},
-  year={2026},
-  note={AI Safety and Cybersecurity Research}
-}
-```
-
 ## License
-Copyright (c) 2026, Michael Tchuindjang 
-All rights reserved.
+Copyright (c) 2026, All rights reserved.
